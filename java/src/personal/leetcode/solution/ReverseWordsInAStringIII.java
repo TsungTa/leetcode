@@ -38,6 +38,7 @@ public class ReverseWordsInAStringIII {
         return ans.toString();
     }
     
+    // without String.split() and StringBuilder
     private static String reverse3(String s) {
         String ans = "";
         
@@ -55,6 +56,8 @@ public class ReverseWordsInAStringIII {
         return ans;
     }
     
+    // with String.split()
+    // without StringBuilder
     private static String reverse2(String s) {
         String ans = "";
         
