@@ -21,8 +21,14 @@ import java.util.Stack;
  */
 public class MaximumDepthOfBinaryTree {
 	public int maxDepth(TreeNode root) {
-        return maxDepthI(root);
+        return maxDepthR(root);
     }
+	
+	// recursion
+	private int maxDepthR(TreeNode root) {
+		if(root == null) return 0;
+		return 1 + Math.max(maxDepthR(root.left), maxDepthR(root.right));
+	}
 	
 	// iterative
 	private int maxDepthI(TreeNode root) {
@@ -42,22 +48,6 @@ public class MaximumDepthOfBinaryTree {
 		}
 		
 		return depth;
-	}
-	
-	// recursion
-	private int maxDepthR(TreeNode root) {
-		return maxDepthR(root, 0);
-	}
-	
-	private int maxDepthR(TreeNode root, int depth) {
-		
-		if(root == null) {
-			return depth;
-		}
-		
-		depth++;
-		
-		return Math.max(maxDepthR(root.left, depth), maxDepthR(root.right, depth));
 	}
 	
 	class Node {
