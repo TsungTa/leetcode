@@ -22,7 +22,7 @@ import java.util.Stack;
 public class InvertBinaryTree {
 	
 	public TreeNode invertTree(TreeNode root) {
-        
+		return invertTreeR(root);
     }
 	
 	// Recursion
