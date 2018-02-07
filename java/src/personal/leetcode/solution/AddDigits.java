@@ -3,7 +3,7 @@ package personal.leetcode.solution;
 import java.util.ArrayList;
 
 /*
- * From: https://leetcode.com/problems/add-digits/description/
+ * link: https://leetcode.com/problems/add-digits/description/
  * 
  * Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
  * 

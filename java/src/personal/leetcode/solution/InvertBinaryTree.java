@@ -3,7 +3,7 @@ package personal.leetcode.solution;
 import java.util.Stack;
 
 /*
- * From: https://leetcode.com/problems/invert-binary-tree/description/
+ * link: https://leetcode.com/problems/invert-binary-tree/description/
  * 
  * Invert a binary tree.
  * 		     4

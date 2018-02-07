@@ -1,7 +1,7 @@
 package personal.leetcode.solution;
 
 /*
- * From: https://leetcode.com/problems/reverse-string/description/
+ * link: https://leetcode.com/problems/reverse-string/description/
  * 
  * Write a function that takes a string as input and returns the string reversed.
  * 

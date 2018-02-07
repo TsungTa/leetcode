@@ -1,7 +1,7 @@
 package personal.leetcode.solution;
 
 /*
- * From: https://leetcode.com/problems/nim-game/description/
+ * link: https://leetcode.com/problems/nim-game/description/
  * 
  * You are playing the following Nim Game with your friend: 
  * There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. 
