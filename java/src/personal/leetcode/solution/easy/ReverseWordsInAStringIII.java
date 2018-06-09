@@ -1,4 +1,4 @@
-package personal.leetcode.solution;
+package personal.leetcode.solution.easy;
 
 /*
  * link: https://leetcode.com/problems/reverse-words-in-a-string-iii/description/

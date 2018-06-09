@@ -1,4 +1,4 @@
-package personal.leetcode.solution;
+package personal.leetcode.solution.easy;
 
 /*
  * link: https://leetcode.com/problems/judge-route-circle/description/
