@@ -1,6 +1,7 @@
 package personal.leetcode.solution.medium;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /*
  * link: https://leetcode.com/problems/generate-parentheses/description/
@@ -10,7 +11,7 @@ public class GenerateParentheses {
 	private static final char RIGHT_PARENTHESIS = ')';
 	
     public List<String> generateParenthesis(int n) {
-        ArrayList<String> res = ArrayList<>();
+        ArrayList<String> res = new ArrayList<>();
         
         StringBuilder baseParentheses = new StringBuilder();
         for(int i = 0; i < n - 1; i++) {
