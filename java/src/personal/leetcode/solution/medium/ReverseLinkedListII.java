@@ -22,37 +22,37 @@ public class ReverseLinkedListII {
         if(head == null || head.next == null || m == n) return head;
         
         // dummy -> ... -> prev -> ...reverse... -> end -> ... -> null
-        ListNode dummy = new ListNode(0), prev = null, end = null, revertedHead = new ListNode(0), revertedTail = null;
+        ListNode dummy = new ListNode(0), prev = null, end = null, revertedHead = null, revertedTail = null;
         dummy.next = head;
         
         // search the list from dummy header
         head = dummy;
         
-        boolean revert = false;
+        boolean reverse = false;
         int count = 0;
         
         while(head != null) {
         	if(count == m - 1) {
+        		// we found the node which before the reverted sub list.
         		prev = head;
         	} else if(count == m) {
+        		// we found the tail node of reverted sub list.
         		revertedTail = head;
-        		revert = true;
+        		reverse = true;
         	} else if(count == n) {
         		end = head.next;
         	} else if(count == n + 1) {
-        		revert = false;
-        		
-        		// finish reverse. Don't have to trace the rest.
+        		// Stop. Don't have to trace the rest.
         		break;
         	}
         	
         	count++;
         	
-        	if(revert) {
+        	if(reverse) {
         		ListNode tmp = head.next;
         		
-        		head.next = revertedHead.next;
-        		revertedHead.next = head;
+        		head.next = revertedHead;
+        		revertedHead = head;
         		
         		head = tmp;
         	} else {
@@ -60,7 +60,7 @@ public class ReverseLinkedListII {
         	}
         }
         
-        prev.next = revertedHead.next;
+        prev.next = revertedHead;
         revertedTail.next = end;
         
         return dummy.next;
